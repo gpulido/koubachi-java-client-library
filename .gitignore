@@ -4,10 +4,12 @@
 *.jar
 *.war
 *.ear
-/koubachi.properties
+koubachi.properties
 koubachi-core/out/*
 .classpath
 .idea/*
 *.iml
+*~
 #add libraries
 !lib/*.jar
+

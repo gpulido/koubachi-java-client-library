@@ -16,3 +16,4 @@ It also borrows some code and programing ideas from the great twitter4j library 
 VERY IMPORTANT
 The koubachi API is still in Beta, and this library is also an early implementation that hopefully will be evolve as the koubachi api.
 
+For first steps information please read the HOWTO.txt

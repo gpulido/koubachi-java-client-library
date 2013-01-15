@@ -1,0 +1,37 @@
+Koubachi-api-library HOWTO USE
+==========================
+Download the latest build with dependencies from the builds folder.
+koubachi-1.0.X.with-dependencies.jar
+
+Add it to the project libraries.
+
+Getting started with the library
+You would need a pair "app_key / user_credentials" values to be allowed to use the koubachi api.
+Apply for them at koubachi labs api access code at labs.koubachi.com
+
+Once they are adquired, they must be used to configure the Koubachi client library. There are several ways
+to do it:
+
+1. via koubachi.properties
+Save a standard properties file named "koubachi.properties". Place it to either the current directory,
+root of the classpath firectory. The file must have the following values:
+
+userCredentials=**************
+appKey=****************
+
+2. via ConfigurationBuilder
+You can use ConfigurationBuilder class to conigure Koubachi programatically as follows:
+
+ConfigurationBuilder cb = new ConfigurationBuilder();
+cb.setUserCredentials("****************************")
+  .setAppKey("*************");
+KoubachiFactory kf = new KoubachiFactory(cb.build());
+Koubachi koubachi = kf.getInstance();
+
+
+To obtain more information about the use of the api itself, read the koubachi.Koubachi class
+
+
+Source Code:
+You can browse the project repository at:
+github: https://github.com/gpulido/koubachi-java-client-library

@@ -19,6 +19,10 @@ root of the classpath firectory. The file must have the following values:
 userCredentials=**************
 appKey=****************
 
+With that information you just need to get the Koubachi instance
+Koubachi koubachi = KoubachiFactory.getSingleton();
+        
+
 2. via ConfigurationBuilder
 You can use ConfigurationBuilder class to conigure Koubachi programatically as follows:
 
@@ -29,7 +33,11 @@ KoubachiFactory kf = new KoubachiFactory(cb.build());
 Koubachi koubachi = kf.getInstance();
 
 
-To obtain more information about the use of the api itself, read the koubachi.Koubachi class
+Once a correct instance of the koubachi class is configured, we only have to use it.
+For example to obtain an ArrayList of all the user's plants:
+ArrayList<Plant> lista = koubachi.getPlants();
+
+To obtain more information about the available commands, read the koubachi.Koubachi class
 
 
 Source Code:

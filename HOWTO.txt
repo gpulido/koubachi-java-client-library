@@ -1,7 +1,7 @@
 Koubachi-api-library HOWTO USE
 ==========================
 Download the latest build with dependencies from the builds folder.
-koubachi-1.0.X.with-dependencies.jar
+koubachi-core-1.0.X.with-dependencies.jar
 
 Add it to the project libraries.
 

@@ -35,7 +35,7 @@ public class Sensor {
 //        [6000.0,"wet"]],
     double yaxis_min;
     double yaxis_max;
-    //TODO: parse the data
+//TODO: parse the data
 //                "data":[[1341247020000,4942.0],
 //        [1341265020000,4934.0],
 //        [1341283022000,4951.0],

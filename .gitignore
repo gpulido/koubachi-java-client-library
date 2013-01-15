@@ -1,15 +1,16 @@
-*.class
 
+out/*
+*.class
 # Package Files #
 *.jar
 *.war
 *.ear
 koubachi.properties
 koubachi-core/out/*
+koubachi-core/target/*
 .classpath
 .idea/*
 *.iml
 *~
 #add libraries
 !lib/*.jar
-

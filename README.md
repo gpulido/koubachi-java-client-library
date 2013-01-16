@@ -1,5 +1,6 @@
 koubachi-java-client-library
 ============================
+NOTE: This library is an unofficial project. Please respect Koubachi's terms in your use of the API.
 
 Koubachi-java-client-library is a Koubachi API binding library for the Java language licensed under Apache License 2.0.
 
@@ -18,6 +19,7 @@ gson - http://code.google.com/p/google-gson/ To transform the json string onto j
 It also borrows some code and programing ideas from the great twitter4j library https://github.com/yusuke/twitter4j
 
 VERY IMPORTANT
+
 The koubachi API is still in Beta, and this library is also an early implementation that will be evolve as the koubachi api do.
 
 For first steps information please read the HOWTO.txt

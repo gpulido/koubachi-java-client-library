@@ -9,16 +9,17 @@
     <artifactId>koubachi-core</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <name>koubachi</name>
+    <name>Koubachi API Java Client Library</name>
     <description>Client Library to connect with the Koubachi api</description>
+    <inceptionYear>2013</inceptionYear>
     <url>https://github.com/gpulido/koubachi-java-client-library</url>
-    <licenses>
+    <!--<licenses>
         <license>
             <name>Apache License 2.0</name>
             <url>http://www.apache.org/licenses/LICENSE-2.0</url>
             <distribution>repo</distribution>
         </license>
-    </licenses>
+    </licenses>-->
 
     <build>
         <plugins>
@@ -69,6 +70,26 @@
                     <!--<revisionOnScmFailure> </revisionOnScmFailure>       -->
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.mycila.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <header>src/LICENSE_HEADER.txt</header>
+                    <properties>
+                        <name>${project.name}</name>
+                        <year>${project.inceptionYear}</year>
+                        <holder>Gabriel Pulido</holder>
+                        <contact>gabriel.pulidodetorres@gmail.com</contact>
+                    </properties>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <finalName>
             ${project.artifactId}-${project.version}.${buildNumber}
@@ -105,5 +126,18 @@
         <developerConnection>scm:git:git@github.com:gpulido/koubachi-java-client-library.git</developerConnection>
         <url>scm:git:git@github.com:gpulido/koubachi-java-client-library.git</url>
     </scm>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>mc-release</id>
+            <name>Local Maven repository of releases</name>
+            <url>http://mc-repo.googlecode.com/svn/maven2/releases</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>

@@ -21,3 +21,7 @@ VERY IMPORTANT
 The koubachi API is still in Beta, and this library is also an early implementation that will be evolve as the koubachi api do.
 
 For first steps information please read the HOWTO.txt
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gpulido/koubachi-java-client-library/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

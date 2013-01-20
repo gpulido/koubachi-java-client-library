@@ -20,6 +20,7 @@
  */
 package koubachi.objects;
 
+import java.awt.*;
 import java.util.Date;
 
 /**
@@ -31,6 +32,7 @@ public class Sensor {
     String name;
     String unit_name;
     String color; //take a look "0092BF",
+
     //TODO: Parse the axis structure
 //
 //            "yaxis_ticks":[[0.0,"very dry"],
@@ -64,5 +66,8 @@ public class Sensor {
 //        [1341922574000,5298.0]],
     Date last_read_at;
 
-
+    public Color getColor()
+    {
+      return Color.decode(color);
+    }
 }

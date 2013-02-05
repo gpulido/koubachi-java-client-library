@@ -21,28 +21,30 @@
 package koubachi.objects;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Map;
 
 /**
  *   A class representing a Sensor
  *   @author Gabriel Pulido - gabriel.pulidodetorres at gmail.com
  */
 public class Sensor {
-    int sensor_type_id; //12 - Humidity, 8 - Illuminance, 7 - temperature,
-    String name;
-    String unit_name;
+    String sensor_type_id; //12 - Humidity, 8 - Illuminance, 7 - temperature,
+    private String name;
+    private String unit_name;
     String color; //take a look "0092BF",
-
-    //TODO: Parse the axis structure
+    private Map<Double,String> yaxis_ticks;
 //
-//            "yaxis_ticks":[[0.0,"very dry"],
+//  "yaxis_ticks":[[0.0,"very dry"],
 //        [1800.0,"dry"],
 //        [2500.0,"slightly moist"],
 //        [4000.0,"moist"],
 //        [6000.0,"wet"]],
-    double yaxis_min;
-    double yaxis_max;
+private double yaxis_min;
+    private double yaxis_max;
 //TODO: parse the data
+private double[][] data;
 //                "data":[[1341247020000,4942.0],
 //        [1341265020000,4934.0],
 //        [1341283022000,4951.0],
@@ -64,10 +66,42 @@ public class Sensor {
 //        [1341883882000,5406.0],
 //        [1341919882000,5295.0],
 //        [1341922574000,5298.0]],
-    Date last_read_at;
+private Date last_read_at;
+
+    public SensorTypeEnum getAdviceType() {
+        return SensorTypeEnum.fromString(sensor_type_id);
+    }
 
     public Color getColor()
     {
       return Color.decode(color);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUnit_name() {
+        return unit_name;
+    }
+
+    public Map<Double, String> getYaxis_ticks() {
+        return yaxis_ticks;
+    }
+
+    public double getYaxis_min() {
+        return yaxis_min;
+    }
+
+    public double getYaxis_max() {
+        return yaxis_max;
+    }
+
+    public double[][] getData() {
+        return data;
+    }
+
+    public Date getLast_read_at() {
+        return last_read_at;
     }
 }

@@ -62,9 +62,9 @@ public class Plant {
     private boolean vdm_water_pending;
     private float vdm_water_level;
     private boolean vdm_precalibrated;
-    private int vdm_water_cycle; //take a look
+    private double vdm_water_cycle; //take a look
     private String vdm_water_instruction;
-    private int vdm_water_analyzing_until;
+    private Date vdm_water_analyzing_until;
     //mist
     private boolean vdm_mist_pending;
     private float vdm_mist_level;
@@ -199,7 +199,7 @@ public class Plant {
         return vdm_precalibrated;
     }
 
-    public int getVdmWaterCycle() {
+    public double getVdmWaterCycle() {
         return vdm_water_cycle;
     }
 
@@ -207,7 +207,7 @@ public class Plant {
         return vdm_water_instruction;
     }
 
-    public int getVdmWaterAnalyzing_until() {
+    public Date getVdmWaterAnalyzing_until() {
         return vdm_water_analyzing_until;
     }
 

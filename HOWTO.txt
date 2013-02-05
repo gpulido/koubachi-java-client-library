@@ -14,7 +14,7 @@ to do it:
 
 1. via koubachi.properties
 Save a standard properties file named "koubachi.properties". Place it to either the current directory,
-root of the classpath firectory. The file must have the following values:
+root of the classpath directory. The file must have the following values:
 
 userCredentials=**************
 appKey=****************

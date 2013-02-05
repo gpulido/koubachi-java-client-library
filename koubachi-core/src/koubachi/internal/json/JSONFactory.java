@@ -226,8 +226,10 @@ public class JSONFactory {
     */
     public ArrayList<Sensor> createPlantSensorReadingList(String jsonData) {
         try {
-            JSONArray jsonArray = new JSONArray(jsonData);
-            return createPlantSensorReadingList(jsonArray);
+            JSONObject jsonObject = new JSONObject(jsonData);
+
+            //JSONArray jsonArray = new JSONArray(jsonData);
+            return createPlantSensorReadingList(jsonObject.getJSONArray("sensors"));
         } catch (JSONException e) {
             e.printStackTrace();
         }

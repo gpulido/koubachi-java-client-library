@@ -20,6 +20,7 @@
  */
 package koubachi;
 
+import koubachi.conf.ConfigurationBuilder;
 import org.restlet.data.Parameter;
 import koubachi.conf.Configuration;
 import koubachi.internal.rest.RestHelper;
@@ -44,8 +45,8 @@ public class KoubachiImpl extends KoubachiBaseImpl implements Koubachi {
 
     //test
     public static void main(String[] args) throws IOException {
-        Koubachi koubachi = KoubachiFactory.getSingleton();
 
+        Koubachi koubachi = KoubachiFactory.getSingleton();
         ArrayList<Plant> lista = koubachi.getPlants();
 
     }

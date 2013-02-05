@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>es.gpulido.koubachi</groupId>
+    <artifactId>koubachi</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Koubachi API Java Client Library</name>
+    <description>Client Library to connect with the Koubachi api</description>
+    <inceptionYear>2013</inceptionYear>
+    <url>https://github.com/gpulido/koubachi-java-client-library</url>
+    <!--<licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>-->
+    <scm>
+        <connection>scm:git:git@github.com:gpulido/koubachi-java-client-library.git</connection>
+        <developerConnection>scm:git:git@github.com:gpulido/koubachi-java-client-library.git</developerConnection>
+        <url>scm:git:git@github.com:gpulido/koubachi-java-client-library.git</url>
+    </scm>
+    <modules>
+        <module>koubachi-core</module>
+    </modules>
+
+</project>

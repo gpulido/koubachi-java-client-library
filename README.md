@@ -1,4 +1,4 @@
-koubachi-java-client-library
+[NOT LONGER MAINTAINED] koubachi-java-client-library
 ============================
 NOTE: This library is an unofficial project. Please respect Koubachi's terms in your use of the API.
 
@@ -24,6 +24,4 @@ The koubachi API is still in Beta, and this library is also an early implementat
 
 For first steps information please read the HOWTO.txt
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gpulido/koubachi-java-client-library/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
